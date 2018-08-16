@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Ranking predictions - Quickscout{% endblock %}
+{% block content %}
+<h1>Ranking predictions</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li class="active">Ranking predictions</li>
+</ol>
+<p class="text-center">As of Q{{predict_rankings[0].as_of}}</p>
+<table class="table table-condensed table-hover table-bordered">
+    <thead>
+    <tr>
+        <th>Team</th>
+        <th>Avg</th>
+        <th>Min</th>
+        <th>Median</th>
+        <th>Max</th>
+        <th>Avg. RP</th>
+        <th>Min. RP</th>
+        <th>Max. RP</th>
+        <th>Left</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for ranking in predict_rankings %}
+    <tr>
+        <td><a href="{{url_for('team_team', team_id=ranking.id)}}">{{ ranking.id }}</a> ({{team_rankings[ranking.id]}})</td>
+        <td>{{ranking.avg}}</td>
+        <td>{{ranking.min}}</td>
+        <td>{{ranking.median}}</td>
+        <td>{{ranking.max}}</td>
+        <td>{{ranking.avg_rp}}</td>
+        <td>{{ranking.min_rp}}</td>
+        <td>{{ranking.max_rp}}</td>
+        <td>{{matches_left[ranking.id]}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

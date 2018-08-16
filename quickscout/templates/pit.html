@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Pit Scouting - Quickscout{% endblock %}
+{% block content %}
+<h1>Pit scouting</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li class="active">Pit Scouting</li>
+</ol>
+<div class="btn-group-vertical" role="group">
+    {% for team in teams %}
+    <a class="btn {%if team.id in reports%}btn-success{%else%}btn-default{%endif%}"
+       href="{{url_for('pit_team', team_id=team.id)}}">
+        {{team.id}}{% if team.pictures() %} 📷{% endif %} (pit: {{team.pit}})
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

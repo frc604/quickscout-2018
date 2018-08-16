@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Review raw data - Quickscout{% endblock %}
+{% block content %}
+<h1>Review raw data: {{team.id}}@Q{{match.id}}</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li><a href="{{url_for('raw')}}">Raw data</a></li>
+  <li class="active">Info ({{ match.id }})</li>
+</ol>
+<p class="text-center">Scouted by {{user_name(events[0].user)}}</p>
+<ul class="text-center">
+    {% for event in events %}
+    <li>T+{{'%02d' % ((event.time-start_time)/1000)}}: {{event.mode}} - {{event.action}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match.js')}}"></script>
+{% endblock %}

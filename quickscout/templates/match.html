@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Match Scouting - Quickscout{% endblock %}
+{% block content %}
+<h1>Match scouting</h1>
+<div class="text-center">
+    {% if show_position %}
+    <p>
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <button type="button" data-pos="{{left}}1" class="btn {{left_color}}" {%if not can_claim or position.left1%}disabled{%endif%}>{{ left.title() }} 1<br>{{ position.left1 or 'Claim' }}</button>
+            <button type="button" data-pos="{{left}}2" class="btn {{left_color}}" {%if not can_claim or position.left2%}disabled{%endif%}>{{ left.title() }} 2<br>{{ position.left2 or 'Claim' }}</button>
+            <button type="button" data-pos="{{left}}3" class="btn {{left_color}}" {%if not can_claim or position.left3%}disabled{%endif%}>{{ left.title() }} 3<br>{{ position.left3 or 'Claim' }}</button>
+        </div>
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <button type="button" data-pos="{{right}}3" class="btn {{right_color}}" {%if not can_claim or position.right3%}disabled{%endif%}>{{ right.title() }} 3<br>{{ position.right3 or 'Claim' }}</button>
+            <button type="button" data-pos="{{right}}2" class="btn {{right_color}}" {%if not can_claim or position.right2%}disabled{%endif%}>{{ right.title() }} 2<br>{{ position.right2 or 'Claim' }}</button>
+            <button type="button" data-pos="{{right}}1" class="btn {{right_color}}" {%if not can_claim or position.right1%}disabled{%endif%}>{{ right.title() }} 1<br>{{ position.right1 or 'Claim' }}</button>
+        </div>
+    </p>
+    {% endif %}
+    <div class="btn-group-vertical" role="group">
+        {% for match in matches %}
+        <a class="btn {%if match.id in played%}btn-success{%else%}btn-default{%endif%}"
+           href="{{url_for(link_target, match_id=match.id)}}">
+            Q{{match.id}}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match.js')}}"></script>
+{% endblock %}

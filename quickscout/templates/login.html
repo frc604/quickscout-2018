@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Login - Quickscout{% endblock %}
+{% block content %}
+<h1>Please login</h1>
+<form method="post" action="" role="form">
+    {% if msg %}
+    <div class="alert alert-danger">{{ msg }}</div>
+    {% endif %}
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+    </div>
+    <button type="submit" class="btn btn-default">Login</button>
+</form>
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}{{team.id}} - Pit Scouting - Quickscout{% endblock %}
+{% block content %}
+<h1>Pit scouting - {{team.id}}</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li><a href="{{url_for('pit')}}">Pit Scouting</a></li>
+  <li class="active">{{team.id}}</li>
+</ol>
+<form action="" method="post" class="form" role="form">
+    {% if msg %}
+    <div class="alert alert-success" role="alert">{{msg}}</div>
+    {% endif %}
+    <p class="text-center">Pit: {{team.pit}}</p>
+    <p class="text-center">Last edited by {{user_name(report.scouter) or 'unknown'}}</p>
+    <div class="text-center">
+        <a class="btn btn-default" href="{{url_for('team_pics', team_id=team.id)}}">
+            {% if team.pictures() %}View pictures ({{ team.pictures()|length }}){% else %}Upload pictures{% endif %}
+        </a>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="drive">Drive base</label>
+        <select class="form-control" id="drive" name="drive">
+            <option {%if report.drive==drive.westcoast%}selected{%endif%} value="westcoast">westcoast</option>
+            <option {%if report.drive==drive.mecanum%}selected{%endif%} value="mecanum">mecanum</option>
+            <option {%if report.drive==drive.omni%}selected{%endif%} value="omni">omni</option>
+            <option {%if report.drive==drive.swerve%}selected{%endif%} value="swerve">swerve</option>
+            <option {%if report.drive==drive.hybrid%}selected{%endif%} value="hybrid">hybrid</option>
+        </select>
+    </div>
+    <div class="form-group ">
+        <label class="control-label" for="speed">Speed</label>
+        <textarea class="form-control" id="speed" name="speed">{{report.speed or ''}}</textarea>
+    </div>
+    <div class="form-group ">
+        <label class="control-label" for="wheels">Drive wheels (number and type)</label>
+        <textarea class="form-control" id="wheels" name="wheels">{{report.wheels or ''}}</textarea>
+    </div>
+
+    <div class="form-group ">
+        <label class="control-label" for="drive_comments">Other drive comments</label>
+        <textarea class="form-control" id="drive_comments" name="drive_comments">{{report.drive_comments or ''}}</textarea>
+    </div>
+
+        <div class="form-group">
+        <label class="control-label" for="programming_lang">Programming language</label>
+        <select class="form-control" id="programming_lang" name="programming_lang">
+            <option {%if report.programming_lang==plang.labview%}selected{%endif%} value="labview">LabView</option>
+            <option {%if report.programming_lang==plang.java%}selected{%endif%} value="java">Java</option>
+            <option {%if report.programming_lang==plang.cplusplus%}selected{%endif%} value="cplusplus">C++</option>
+            <option {%if report.programming_lang==plang.python%}selected{%endif%} value="python">Python</option>
+            <option {%if report.programming_lang==plang.other%}selected{%endif%} value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input id="can_autocrossline" name="can_autocrossline" type="checkbox" value="y" {%if report.can_autocrossline%}checked{%endif%}> Auto: can cross line
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input id="can_autoswitch" name="can_autoswitch" type="checkbox" value="y" {%if report.can_autoswitch%}checked{%endif%}> Auto: can score in switch
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input id="can_autoscale" name="can_autoscale" type="checkbox" value="y" {%if report.can_autoscale%}checked{%endif%}> Auto: can score in scale
+        </label>
+    </div>
+    <div class="form-group ">
+        <label class="control-label" for="auto_strategy">Describe auto strategy</label>
+        <textarea class="form-control" id="auto_strategy" name="auto_strategy">{{report.auto_strategy or ''}}</textarea>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input id="can_teleopswitch" name="can_teleopswitch" type="checkbox" value="y" {%if report.can_teleopswitch%}checked{%endif%}> Teleop: can score in switch
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input id="can_teleopscale" name="can_teleopscale" type="checkbox" value="y" {%if report.can_teleopscale%}checked{%endif%}> Teleop: can score in scale
+        </label>
+    </div>
+    <div class="form-group ">
+        <label class="control-label" for="teleop_strategy">Describe teleop strategy</label>
+        <textarea class="form-control" id="teleop_strategy" name="teleop_strategy">{{report.teleop_strategy or ''}}</textarea>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input id="can_climb" name="can_climb" type="checkbox" value="y" {%if report.can_climb%}checked{%endif%}> Can climb?
+        </label>
+    </div>
+
+    <div class="form-group ">
+        <label class="control-label" for="climb_design">Describe climber design</label>
+        <textarea class="form-control" id="climb_design" name="climb_design">{{report.climb_design or ''}}</textarea>
+    </div>
+
+    <div class="form-group ">
+        <label class="control-label" for="climb_ramps">Has ramps?</label>
+        <select class="form-control" id="climb_ramps" name="climb_ramps">
+            <option {%if report.climb_ramps==0%}selected{%endif%} value="0">0</option>
+            <option {%if report.climb_ramps==1%}selected{%endif%} value="1">1</option>
+            <option {%if report.climb_ramps==2%}selected{%endif%} value="2">2</option>
+        </select>
+    </div>
+
+    <div class="form-group ">
+        <label class="control-label" for="comments">Additional comments</label>
+        <textarea class="form-control" id="comments" name="comments">{{report.comments or ''}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock %}

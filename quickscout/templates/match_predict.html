@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Q{{match_id}} - Predict - Quickscout{% endblock %}
+{% block content %}
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li><a href="{{url_for('predict')}}">Make predictions</a></li>
+  <li class="active">Q{{match_id}}</li>
+</ol>
+<p class="text-center">Match {{ match_id }}</p>
+<ul class="text-center">
+    <li>Red: {{red_teams}}</li>
+    <li>Blue: {{blue_teams}}</li>
+</ul>
+<div class="text-center">
+    {% include 'predict_buttons.html' %}
+</div>
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match_predict.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Predictions - Quickscout{% endblock %}
+{% block content %}
+<h1>Prediction Game</h1>
+<table class="table table-condensed table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Correct</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, count in users.items() %}
+        {% if count > 0 %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ round(count/user_totals[name]*100, 2)}}% ({{ count }}/{{ user_totals[name] }})</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

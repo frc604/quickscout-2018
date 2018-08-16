@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Q{{match.id}} - Super Scout - Quickscout{% endblock %}
+{% block content %}
+<p class="text-center">Match {{ match_id }}</p>
+<div class="text-center">
+    {% include 'predict_buttons.html' %}
+</div>
+<form class="text-center" style="float: none; margin: 0 auto; max-width: 500px;" method='post' role="form" action="">
+    <div class="form-group">
+        <h2>Blue</h2>
+        <p>
+            {% for team in match.teams()['blue'] %}
+            <h3>{{ team }}</h3>
+            <textarea class="form-control" rows="3" placeholder="{{ team }}" id="{{ team }}" name="{{ team }}">{{data[team].info or ''}}</textarea>
+            {% endfor %}
+        </p>
+    </div>
+    <div class="form-group">
+        <h2>Red</h2>
+        <p>
+            {% for team in match.teams()['red'] %}
+            <h3>{{ team }}</h3>
+            <textarea class="form-control" rows="3" placeholder="{{ team }}" id="{{ team }}" name="{{ team }}">{{data[team].info or ''}}</textarea>
+            {% endfor %}
+        </p>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match_predict.js')}}"></script>
+{% endblock %}

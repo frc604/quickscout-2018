@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Make predictions - Quickscout{% endblock %}
+{% block content %}
+<h1>Make predictions</h1>
+<div class="text-center">
+    <div class="btn-group-vertical" role="group">
+        {% for match in matches %}
+        <a class="btn {% if match.id in predicted %}btn-success{% else %}btn-default{% endif %}"
+           href="{{url_for('predict_match', match_id=match.id)}}">
+            Q{{match.id}}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match.js')}}"></script>
+{% endblock %}

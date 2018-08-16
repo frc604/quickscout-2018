@@ -1,0 +1,1624 @@
+{
+   "locations" : {
+      "frc4400" : {
+         "div" : "Hopper",
+         "loc" : "I32"
+      },
+      "frc7039" : {
+         "div" : "Hopper",
+         "loc" : "I37"
+      },
+      "frc6814" : {
+         "loc" : "C14",
+         "div" : "Newton"
+      },
+      "frc6060" : {
+         "loc" : "I27",
+         "div" : "Hopper"
+      },
+      "frc2122" : {
+         "div" : "Turing",
+         "loc" : "I16"
+      },
+      "frc2415" : {
+         "loc" : "A29",
+         "div" : "Carver"
+      },
+      "frc3284" : {
+         "loc" : "H43",
+         "div" : "Hopper"
+      },
+      "frc5429" : {
+         "div" : "Roebling",
+         "loc" : "E13"
+      },
+      "frc1828" : {
+         "loc" : "H41",
+         "div" : "Hopper"
+      },
+      "frc4984" : {
+         "loc" : "G22",
+         "div" : "Turing"
+      },
+      "frc1197" : {
+         "div" : "Galileo",
+         "loc" : "D44"
+      },
+      "frc6887" : {
+         "loc" : "F15",
+         "div" : "Roebling"
+      },
+      "frc1939" : {
+         "div" : "Galileo",
+         "loc" : "E51"
+      },
+      "frc7079" : {
+         "div" : "Turing",
+         "loc" : "I24"
+      },
+      "frc5212" : {
+         "loc" : "E16",
+         "div" : "Roebling"
+      },
+      "frc5960" : {
+         "div" : "Galileo",
+         "loc" : "G51"
+      },
+      "frc294" : {
+         "div" : "Hopper",
+         "loc" : "H37"
+      },
+      "frc2283" : {
+         "loc" : "G44",
+         "div" : "Hopper"
+      },
+      "frc7134" : {
+         "div" : "Newton",
+         "loc" : "D15"
+      },
+      "frc4924" : {
+         "div" : "Galileo",
+         "loc" : "F35"
+      },
+      "frc4010" : {
+         "loc" : "F46",
+         "div" : "Galileo"
+      },
+      "frc6459" : {
+         "loc" : "G25",
+         "div" : "Roebling"
+      },
+      "frc1533" : {
+         "div" : "Turing",
+         "loc" : "H12"
+      },
+      "frc1296" : {
+         "loc" : "I17",
+         "div" : "Turing"
+      },
+      "frc4513" : {
+         "div" : "Newton",
+         "loc" : "C08"
+      },
+      "frc2403" : {
+         "div" : "Newton",
+         "loc" : "C19"
+      },
+      "frc6999" : {
+         "loc" : "F33",
+         "div" : "Galileo"
+      },
+      "frc5986" : {
+         "loc" : "H24",
+         "div" : "Turing"
+      },
+      "frc3991" : {
+         "div" : "Carver",
+         "loc" : "C23"
+      },
+      "frc6957" : {
+         "loc" : "F05",
+         "div" : "Roebling"
+      },
+      "frc1700" : {
+         "loc" : "A21",
+         "div" : "Newton"
+      },
+      "frc2130" : {
+         "loc" : "G05",
+         "div" : "Turing"
+      },
+      "frc1710" : {
+         "div" : "Roebling",
+         "loc" : "F27"
+      },
+      "frc3495" : {
+         "div" : "Hopper",
+         "loc" : "H46"
+      },
+      "frc4910" : {
+         "div" : "Galileo",
+         "loc" : "E32"
+      },
+      "frc2789" : {
+         "loc" : "F48",
+         "div" : "Galileo"
+      },
+      "frc7123" : {
+         "loc" : "C33",
+         "div" : "Carver"
+      },
+      "frc5499" : {
+         "div" : "Carver",
+         "loc" : "B38"
+      },
+      "frc1311" : {
+         "loc" : "F34",
+         "div" : "Galileo"
+      },
+      "frc3140" : {
+         "loc" : "D08",
+         "div" : "Newton"
+      },
+      "frc7128" : {
+         "loc" : "D11",
+         "div" : "Newton"
+      },
+      "frc5584" : {
+         "loc" : "H22",
+         "div" : "Turing"
+      },
+      "frc4091" : {
+         "loc" : "F37",
+         "div" : "Galileo"
+      },
+      "frc1806" : {
+         "div" : "Turing",
+         "loc" : "I15"
+      },
+      "frc4159" : {
+         "div" : "Roebling",
+         "loc" : "E21"
+      },
+      "frc254" : {
+         "div" : "Hopper",
+         "loc" : "H33"
+      },
+      "frc6833" : {
+         "loc" : "E47",
+         "div" : "Galileo"
+      },
+      "frc4171" : {
+         "loc" : "D33",
+         "div" : "Carver"
+      },
+      "frc1619" : {
+         "div" : "Newton",
+         "loc" : "B10"
+      },
+      "frc647" : {
+         "div" : "Galileo",
+         "loc" : "G43"
+      },
+      "frc488" : {
+         "loc" : "F17",
+         "div" : "Roebling"
+      },
+      "frc4468" : {
+         "loc" : "B12",
+         "div" : "Newton"
+      },
+      "frc7137" : {
+         "loc" : "C02",
+         "div" : "Newton"
+      },
+      "frc368" : {
+         "div" : "Galileo",
+         "loc" : "E38"
+      },
+      "frc4146" : {
+         "div" : "Turing",
+         "loc" : "G24"
+      },
+      "frc1574" : {
+         "div" : "Galileo",
+         "loc" : "F30"
+      },
+      "frc5908" : {
+         "loc" : "H16",
+         "div" : "Turing"
+      },
+      "frc6672" : {
+         "div" : "Hopper",
+         "loc" : "I35"
+      },
+      "frc3229" : {
+         "div" : "Carver",
+         "loc" : "C26"
+      },
+      "frc701" : {
+         "loc" : "F31",
+         "div" : "Galileo"
+      },
+      "frc5554" : {
+         "div" : "Newton",
+         "loc" : "A12"
+      },
+      "frc5654" : {
+         "loc" : "A22",
+         "div" : "Newton"
+      },
+      "frc624" : {
+         "loc" : "D13",
+         "div" : "Newton"
+      },
+      "frc4627" : {
+         "loc" : "I18",
+         "div" : "Turing"
+      },
+      "frc4501" : {
+         "loc" : "C31",
+         "div" : "Carver"
+      },
+      "frc4306" : {
+         "loc" : "B26",
+         "div" : "Carver"
+      },
+      "frc3230" : {
+         "div" : "Galileo",
+         "loc" : "D52"
+      },
+      "frc6985" : {
+         "div" : "Carver",
+         "loc" : "C42"
+      },
+      "frc687" : {
+         "div" : "Newton",
+         "loc" : "D05"
+      },
+      "frc5496" : {
+         "div" : "Hopper",
+         "loc" : "H26"
+      },
+      "frc6304" : {
+         "div" : "Galileo",
+         "loc" : "D46"
+      },
+      "frc2910" : {
+         "loc" : "D29",
+         "div" : "Carver"
+      },
+      "frc649" : {
+         "div" : "Galileo",
+         "loc" : "G49"
+      },
+      "frc932" : {
+         "loc" : "B24",
+         "div" : "Carver"
+      },
+      "frc6025" : {
+         "div" : "Hopper",
+         "loc" : "H52"
+      },
+      "frc7190" : {
+         "loc" : "D06",
+         "div" : "Newton"
+      },
+      "frc3937" : {
+         "div" : "Galileo",
+         "loc" : "E49"
+      },
+      "frc5190" : {
+         "loc" : "G39",
+         "div" : "Galileo"
+      },
+      "frc6024" : {
+         "loc" : "D22",
+         "div" : "Roebling"
+      },
+      "frc2584" : {
+         "loc" : "F18",
+         "div" : "Roebling"
+      },
+      "frc1156" : {
+         "loc" : "G48",
+         "div" : "Hopper"
+      },
+      "frc2928" : {
+         "div" : "Carver",
+         "loc" : "C34"
+      },
+      "frc1817" : {
+         "loc" : "G47",
+         "div" : "Galileo"
+      },
+      "frc3238" : {
+         "div" : "Carver",
+         "loc" : "A41"
+      },
+      "frc3663" : {
+         "loc" : "H15",
+         "div" : "Turing"
+      },
+      "frc3103" : {
+         "loc" : "F29",
+         "div" : "Galileo"
+      },
+      "frc1378" : {
+         "div" : "Carver",
+         "loc" : "C27"
+      },
+      "frc5801" : {
+         "loc" : "G42",
+         "div" : "Hopper"
+      },
+      "frc118" : {
+         "loc" : "B04",
+         "div" : "Newton"
+      },
+      "frc7157" : {
+         "loc" : "I40",
+         "div" : "Hopper"
+      },
+      "frc6813" : {
+         "div" : "Galileo",
+         "loc" : "D36"
+      },
+      "frc2905" : {
+         "loc" : "C22",
+         "div" : "Newton"
+      },
+      "frc148" : {
+         "loc" : "H40",
+         "div" : "Hopper"
+      },
+      "frc7034" : {
+         "loc" : "I29",
+         "div" : "Hopper"
+      },
+      "frc5849" : {
+         "loc" : "A17",
+         "div" : "Newton"
+      },
+      "frc2811" : {
+         "div" : "Carver",
+         "loc" : "C38"
+      },
+      "frc180" : {
+         "loc" : "H34",
+         "div" : "Hopper"
+      },
+      "frc3473" : {
+         "div" : "Newton",
+         "loc" : "A19"
+      },
+      "frc1986" : {
+         "loc" : "D34",
+         "div" : "Galileo"
+      },
+      "frc5045" : {
+         "div" : "Turing",
+         "loc" : "I09"
+      },
+      "frc3128" : {
+         "div" : "Newton",
+         "loc" : "B18"
+      },
+      "frc5572" : {
+         "div" : "Hopper",
+         "loc" : "G26"
+      },
+      "frc744" : {
+         "loc" : "B36",
+         "div" : "Carver"
+      },
+      "frc2486" : {
+         "div" : "Galileo",
+         "loc" : "E52"
+      },
+      "frc3310" : {
+         "div" : "Newton",
+         "loc" : "A02"
+      },
+      "frc3880" : {
+         "div" : "Roebling",
+         "loc" : "E14"
+      },
+      "frc3834" : {
+         "loc" : "A35",
+         "div" : "Carver"
+      },
+      "frc3218" : {
+         "div" : "Turing",
+         "loc" : "H07"
+      },
+      "frc6888" : {
+         "loc" : "H06",
+         "div" : "Turing"
+      },
+      "frc5839" : {
+         "loc" : "H27",
+         "div" : "Hopper"
+      },
+      "frc3598" : {
+         "loc" : "G31",
+         "div" : "Galileo"
+      },
+      "frc568" : {
+         "div" : "Turing",
+         "loc" : "H13"
+      },
+      "frc3005" : {
+         "div" : "Galileo",
+         "loc" : "D48"
+      },
+      "frc3158" : {
+         "div" : "Newton",
+         "loc" : "B19"
+      },
+      "frc7140" : {
+         "loc" : "I49",
+         "div" : "Hopper"
+      },
+      "frc5678" : {
+         "div" : "Roebling",
+         "loc" : "E17"
+      },
+      "frc4488" : {
+         "div" : "Galileo",
+         "loc" : "F49"
+      },
+      "frc5410" : {
+         "loc" : "F14",
+         "div" : "Roebling"
+      },
+      "frc3288" : {
+         "div" : "Roebling",
+         "loc" : "F11"
+      },
+      "frc1902" : {
+         "loc" : "H32",
+         "div" : "Hopper"
+      },
+      "frc6390" : {
+         "div" : "Roebling",
+         "loc" : "F24"
+      },
+      "frc968" : {
+         "div" : "Newton",
+         "loc" : "B08"
+      },
+      "frc3674" : {
+         "div" : "Galileo",
+         "loc" : "F42"
+      },
+      "frc1421" : {
+         "div" : "Carver",
+         "loc" : "A40"
+      },
+      "frc2659" : {
+         "loc" : "F38",
+         "div" : "Galileo"
+      },
+      "frc5449" : {
+         "div" : "Turing",
+         "loc" : "G11"
+      },
+      "frc7173" : {
+         "div" : "Hopper",
+         "loc" : "I38"
+      },
+      "frc7327" : {
+         "div" : "Roebling",
+         "loc" : "D30"
+      },
+      "frc3374" : {
+         "loc" : "G35",
+         "div" : "Galileo"
+      },
+      "frc1984" : {
+         "loc" : "H50",
+         "div" : "Hopper"
+      },
+      "frc1730" : {
+         "loc" : "G27",
+         "div" : "Roebling"
+      },
+      "frc7277" : {
+         "loc" : "E42",
+         "div" : "Galileo"
+      },
+      "frc1540" : {
+         "loc" : "F07",
+         "div" : "Roebling"
+      },
+      "frc3847" : {
+         "loc" : "I05",
+         "div" : "Turing"
+      },
+      "frc3223" : {
+         "loc" : "H44",
+         "div" : "Hopper"
+      },
+      "frc987" : {
+         "div" : "Turing",
+         "loc" : "H03"
+      },
+      "frc6898" : {
+         "loc" : "E35",
+         "div" : "Galileo"
+      },
+      "frc175" : {
+         "div" : "Carver",
+         "loc" : "D37"
+      },
+      "frc1744" : {
+         "loc" : "G04",
+         "div" : "Turing"
+      },
+      "frc4192" : {
+         "loc" : "B25",
+         "div" : "Carver"
+      },
+      "frc6702" : {
+         "loc" : "H42",
+         "div" : "Hopper"
+      },
+      "frc341" : {
+         "div" : "Carver",
+         "loc" : "C32"
+      },
+      "frc5458" : {
+         "loc" : "A25",
+         "div" : "Carver"
+      },
+      "frc3075" : {
+         "div" : "Hopper",
+         "loc" : "I31"
+      },
+      "frc2073" : {
+         "div" : "Roebling",
+         "loc" : "F03"
+      },
+      "frc1778" : {
+         "loc" : "D16",
+         "div" : "Roebling"
+      },
+      "frc3653" : {
+         "loc" : "E43",
+         "div" : "Galileo"
+      },
+      "frc1369" : {
+         "div" : "Carver",
+         "loc" : "B33"
+      },
+      "frc4265" : {
+         "div" : "Carver",
+         "loc" : "A27"
+      },
+      "frc812" : {
+         "div" : "Newton",
+         "loc" : "C01"
+      },
+      "frc7301" : {
+         "loc" : "A23",
+         "div" : "Carver"
+      },
+      "frc6705" : {
+         "div" : "Hopper",
+         "loc" : "H31"
+      },
+      "frc7179" : {
+         "div" : "Turing",
+         "loc" : "H23"
+      },
+      "frc1318" : {
+         "loc" : "I08",
+         "div" : "Turing"
+      },
+      "frc5006" : {
+         "loc" : "D27",
+         "div" : "Carver"
+      },
+      "frc801" : {
+         "div" : "Carver",
+         "loc" : "D35"
+      },
+      "frc3239" : {
+         "div" : "Roebling",
+         "loc" : "E10"
+      },
+      "frc2974" : {
+         "loc" : "G32",
+         "div" : "Hopper"
+      },
+      "frc1477" : {
+         "div" : "Carver",
+         "loc" : "D41"
+      },
+      "frc2471" : {
+         "div" : "Turing",
+         "loc" : "G18"
+      },
+      "frc1515" : {
+         "loc" : "E20",
+         "div" : "Roebling"
+      },
+      "frc6652" : {
+         "div" : "Roebling",
+         "loc" : "F21"
+      },
+      "frc364" : {
+         "loc" : "G09",
+         "div" : "Turing"
+      },
+      "frc4587" : {
+         "div" : "Galileo",
+         "loc" : "E48"
+      },
+      "frc5417" : {
+         "div" : "Turing",
+         "loc" : "G08"
+      },
+      "frc2637" : {
+         "loc" : "H01",
+         "div" : "Turing"
+      },
+      "frc3339" : {
+         "div" : "Hopper",
+         "loc" : "I39"
+      },
+      "frc3737" : {
+         "loc" : "C10",
+         "div" : "Newton"
+      },
+      "frc6072" : {
+         "div" : "Roebling",
+         "loc" : "D20"
+      },
+      "frc6996" : {
+         "loc" : "F23",
+         "div" : "Roebling"
+      },
+      "frc3481" : {
+         "loc" : "C17",
+         "div" : "Newton"
+      },
+      "frc4256" : {
+         "div" : "Galileo",
+         "loc" : "F43"
+      },
+      "frc4061" : {
+         "div" : "Newton",
+         "loc" : "A11"
+      },
+      "frc6508" : {
+         "div" : "Newton",
+         "loc" : "B03"
+      },
+      "frc5026" : {
+         "div" : "Carver",
+         "loc" : "C40"
+      },
+      "frc5472" : {
+         "div" : "Roebling",
+         "loc" : "E25"
+      },
+      "frc2367" : {
+         "div" : "Newton",
+         "loc" : "D07"
+      },
+      "frc5854" : {
+         "loc" : "I42",
+         "div" : "Hopper"
+      },
+      "frc2658" : {
+         "loc" : "H21",
+         "div" : "Turing"
+      },
+      "frc6800" : {
+         "div" : "Carver",
+         "loc" : "A43"
+      },
+      "frc59" : {
+         "div" : "Hopper",
+         "loc" : "I41"
+      },
+      "frc4561" : {
+         "div" : "Turing",
+         "loc" : "I14"
+      },
+      "frc6413" : {
+         "div" : "Carver",
+         "loc" : "A24"
+      },
+      "frc1425" : {
+         "loc" : "B40",
+         "div" : "Carver"
+      },
+      "frc7287" : {
+         "loc" : "I13",
+         "div" : "Turing"
+      },
+      "frc4451" : {
+         "div" : "Galileo",
+         "loc" : "E45"
+      },
+      "frc3959" : {
+         "div" : "Roebling",
+         "loc" : "E05"
+      },
+      "frc342" : {
+         "loc" : "A32",
+         "div" : "Carver"
+      },
+      "frc5242" : {
+         "div" : "Hopper",
+         "loc" : "G28"
+      },
+      "frc5985" : {
+         "loc" : "E24",
+         "div" : "Roebling"
+      },
+      "frc3646" : {
+         "div" : "Roebling",
+         "loc" : "F22"
+      },
+      "frc1678" : {
+         "loc" : "B20",
+         "div" : "Newton"
+      },
+      "frc6988" : {
+         "div" : "Carver",
+         "loc" : "C24"
+      },
+      "frc4576" : {
+         "div" : "Newton",
+         "loc" : "B06"
+      },
+      "frc6885" : {
+         "loc" : "I45",
+         "div" : "Hopper"
+      },
+      "frc6941" : {
+         "loc" : "I23",
+         "div" : "Turing"
+      },
+      "frc3753" : {
+         "div" : "Carver",
+         "loc" : "A31"
+      },
+      "frc5522" : {
+         "div" : "Turing",
+         "loc" : "I22"
+      },
+      "frc4125" : {
+         "div" : "Newton",
+         "loc" : "B16"
+      },
+      "frc2102" : {
+         "div" : "Turing",
+         "loc" : "I03"
+      },
+      "frc5726" : {
+         "div" : "Newton",
+         "loc" : "C12"
+      },
+      "frc6803" : {
+         "div" : "Hopper",
+         "loc" : "I48"
+      },
+      "frc3164" : {
+         "loc" : "B22",
+         "div" : "Newton"
+      },
+      "frc5098" : {
+         "div" : "Newton",
+         "loc" : "A04"
+      },
+      "frc1102" : {
+         "loc" : "G17",
+         "div" : "Turing"
+      },
+      "frc2992" : {
+         "div" : "Hopper",
+         "loc" : "I26"
+      },
+      "frc6348" : {
+         "div" : "Roebling",
+         "loc" : "E28"
+      },
+      "frc1323" : {
+         "div" : "Roebling",
+         "loc" : "E15"
+      },
+      "frc3390" : {
+         "loc" : "F26",
+         "div" : "Roebling"
+      },
+      "frc6919" : {
+         "div" : "Hopper",
+         "loc" : "G38"
+      },
+      "frc3476" : {
+         "loc" : "F13",
+         "div" : "Roebling"
+      },
+      "frc4944" : {
+         "loc" : "D39",
+         "div" : "Carver"
+      },
+      "frc972" : {
+         "div" : "Roebling",
+         "loc" : "E12"
+      },
+      "frc5515" : {
+         "loc" : "F39",
+         "div" : "Galileo"
+      },
+      "frc2854" : {
+         "div" : "Hopper",
+         "loc" : "I51"
+      },
+      "frc6357" : {
+         "loc" : "G33",
+         "div" : "Galileo"
+      },
+      "frc4205" : {
+         "div" : "Galileo",
+         "loc" : "F51"
+      },
+      "frc971" : {
+         "div" : "Newton",
+         "loc" : "B01"
+      },
+      "frc4733" : {
+         "div" : "Hopper",
+         "loc" : "I28"
+      },
+      "frc7303" : {
+         "div" : "Newton",
+         "loc" : "A10"
+      },
+      "frc7111" : {
+         "div" : "Carver",
+         "loc" : "B42"
+      },
+      "frc108" : {
+         "loc" : "C29",
+         "div" : "Carver"
+      },
+      "frc1410" : {
+         "loc" : "B29",
+         "div" : "Carver"
+      },
+      "frc1648" : {
+         "div" : "Newton",
+         "loc" : "D17"
+      },
+      "frc2485" : {
+         "loc" : "E36",
+         "div" : "Galileo"
+      },
+      "frc2848" : {
+         "div" : "Turing",
+         "loc" : "G14"
+      },
+      "frc3478" : {
+         "div" : "Turing",
+         "loc" : "I11"
+      },
+      "frc2352" : {
+         "div" : "Roebling",
+         "loc" : "D14"
+      },
+      "frc6014" : {
+         "div" : "Hopper",
+         "loc" : "H35"
+      },
+      "frc4610" : {
+         "div" : "Galileo",
+         "loc" : "F32"
+      },
+      "frc2521" : {
+         "loc" : "E23",
+         "div" : "Roebling"
+      },
+      "frc6817" : {
+         "div" : "Galileo",
+         "loc" : "E34"
+      },
+      "frc3882" : {
+         "loc" : "D10",
+         "div" : "Roebling"
+      },
+      "frc6838" : {
+         "div" : "Carver",
+         "loc" : "A30"
+      },
+      "frc2576" : {
+         "loc" : "F08",
+         "div" : "Roebling"
+      },
+      "frc5805" : {
+         "loc" : "B30",
+         "div" : "Carver"
+      },
+      "frc399" : {
+         "div" : "Hopper",
+         "loc" : "G34"
+      },
+      "frc4188" : {
+         "div" : "Roebling",
+         "loc" : "F04"
+      },
+      "frc2046" : {
+         "loc" : "G13",
+         "div" : "Turing"
+      },
+      "frc6846" : {
+         "loc" : "B28",
+         "div" : "Carver"
+      },
+      "frc2682" : {
+         "div" : "Galileo",
+         "loc" : "E40"
+      },
+      "frc330" : {
+         "div" : "Galileo",
+         "loc" : "E37"
+      },
+      "frc120" : {
+         "div" : "Turing",
+         "loc" : "G16"
+      },
+      "frc2080" : {
+         "div" : "Roebling",
+         "loc" : "E26"
+      },
+      "frc6377" : {
+         "loc" : "D19",
+         "div" : "Newton"
+      },
+      "frc1763" : {
+         "loc" : "E07",
+         "div" : "Roebling"
+      },
+      "frc6429" : {
+         "div" : "Galileo",
+         "loc" : "F45"
+      },
+      "frc2976" : {
+         "div" : "Hopper",
+         "loc" : "I46"
+      },
+      "frc6502" : {
+         "loc" : "A38",
+         "div" : "Carver"
+      },
+      "frc7063" : {
+         "div" : "Turing",
+         "loc" : "H05"
+      },
+      "frc2231" : {
+         "loc" : "H04",
+         "div" : "Turing"
+      },
+      "frc179" : {
+         "loc" : "E01",
+         "div" : "Roebling"
+      },
+      "frc3489" : {
+         "div" : "Hopper",
+         "loc" : "I44"
+      },
+      "frc4802" : {
+         "loc" : "F12",
+         "div" : "Roebling"
+      },
+      "frc2556" : {
+         "loc" : "B32",
+         "div" : "Carver"
+      },
+      "frc1011" : {
+         "loc" : "A05",
+         "div" : "Newton"
+      },
+      "frc3792" : {
+         "div" : "Roebling",
+         "loc" : "D26"
+      },
+      "frc6050" : {
+         "div" : "Hopper",
+         "loc" : "H45"
+      },
+      "frc3019" : {
+         "loc" : "H29",
+         "div" : "Hopper"
+      },
+      "frc5145" : {
+         "loc" : "E31",
+         "div" : "Galileo"
+      },
+      "frc1723" : {
+         "div" : "Newton",
+         "loc" : "A15"
+      },
+      "frc6871" : {
+         "loc" : "C06",
+         "div" : "Newton"
+      },
+      "frc360" : {
+         "loc" : "H02",
+         "div" : "Turing"
+      },
+      "frc1414" : {
+         "div" : "Carver",
+         "loc" : "B44"
+      },
+      "frc4613" : {
+         "loc" : "F50",
+         "div" : "Galileo"
+      },
+      "frc456" : {
+         "loc" : "H25",
+         "div" : "Hopper"
+      },
+      "frc4911" : {
+         "div" : "Carver",
+         "loc" : "C25"
+      },
+      "frc5803" : {
+         "loc" : "C44",
+         "div" : "Carver"
+      },
+      "frc1769" : {
+         "div" : "Carver",
+         "loc" : "D23"
+      },
+      "frc3593" : {
+         "div" : "Turing",
+         "loc" : "G02"
+      },
+      "frc4795" : {
+         "div" : "Carver",
+         "loc" : "A42"
+      },
+      "frc4635" : {
+         "div" : "Galileo",
+         "loc" : "F52"
+      },
+      "frc3970" : {
+         "loc" : "H36",
+         "div" : "Hopper"
+      },
+      "frc2630" : {
+         "loc" : "G01",
+         "div" : "Turing"
+      },
+      "frc6824" : {
+         "div" : "Galileo",
+         "loc" : "F36"
+      },
+      "frc4603" : {
+         "loc" : "I10",
+         "div" : "Turing"
+      },
+      "frc3526" : {
+         "loc" : "D32",
+         "div" : "Galileo"
+      },
+      "frc3250" : {
+         "loc" : "F20",
+         "div" : "Roebling"
+      },
+      "frc2557" : {
+         "div" : "Turing",
+         "loc" : "I12"
+      },
+      "frc6886" : {
+         "loc" : "G29",
+         "div" : "Galileo"
+      },
+      "frc2980" : {
+         "div" : "Newton",
+         "loc" : "B02"
+      },
+      "frc4191" : {
+         "loc" : "E18",
+         "div" : "Roebling"
+      },
+      "frc2655" : {
+         "div" : "Turing",
+         "loc" : "G21"
+      },
+      "frc7193" : {
+         "div" : "Roebling",
+         "loc" : "E27"
+      },
+      "frc6907" : {
+         "loc" : "I47",
+         "div" : "Hopper"
+      },
+      "frc1868" : {
+         "div" : "Newton",
+         "loc" : "A06"
+      },
+      "frc6106" : {
+         "div" : "Roebling",
+         "loc" : "E09"
+      },
+      "frc1261" : {
+         "div" : "Hopper",
+         "loc" : "I52"
+      },
+      "frc4401" : {
+         "loc" : "F28",
+         "div" : "Roebling"
+      },
+      "frc3316" : {
+         "loc" : "F25",
+         "div" : "Roebling"
+      },
+      "frc5802" : {
+         "loc" : "D03",
+         "div" : "Newton"
+      },
+      "frc973" : {
+         "div" : "Hopper",
+         "loc" : "G30"
+      },
+      "frc3853" : {
+         "div" : "Newton",
+         "loc" : "A13"
+      },
+      "frc3965" : {
+         "div" : "Galileo",
+         "loc" : "E33"
+      },
+      "frc6474" : {
+         "div" : "Newton",
+         "loc" : "C03"
+      },
+      "frc4189" : {
+         "loc" : "G19",
+         "div" : "Turing"
+      },
+      "frc3008" : {
+         "loc" : "E44",
+         "div" : "Galileo"
+      },
+      "frc343" : {
+         "loc" : "C36",
+         "div" : "Carver"
+      },
+      "frc6510" : {
+         "div" : "Newton",
+         "loc" : "D04"
+      },
+      "frc2468" : {
+         "loc" : "F40",
+         "div" : "Galileo"
+      },
+      "frc2840" : {
+         "loc" : "A09",
+         "div" : "Newton"
+      },
+      "frc1251" : {
+         "div" : "Newton",
+         "loc" : "B21"
+      },
+      "frc7057" : {
+         "loc" : "G03",
+         "div" : "Turing"
+      },
+      "frc842" : {
+         "div" : "Turing",
+         "loc" : "G20"
+      },
+      "frc2152" : {
+         "loc" : "D43",
+         "div" : "Carver"
+      },
+      "frc6832" : {
+         "loc" : "C46",
+         "div" : "Carver"
+      },
+      "frc3397" : {
+         "loc" : "H51",
+         "div" : "Hopper"
+      },
+      "frc1810" : {
+         "loc" : "I43",
+         "div" : "Hopper"
+      },
+      "frc7293" : {
+         "loc" : "I36",
+         "div" : "Hopper"
+      },
+      "frc16" : {
+         "div" : "Carver",
+         "loc" : "A33"
+      },
+      "frc3472" : {
+         "div" : "Newton",
+         "loc" : "B05"
+      },
+      "frc668" : {
+         "div" : "Roebling",
+         "loc" : "F10"
+      },
+      "frc7312" : {
+         "loc" : "D18",
+         "div" : "Roebling"
+      },
+      "frc832" : {
+         "loc" : "C20",
+         "div" : "Newton"
+      },
+      "frc1706" : {
+         "loc" : "I50",
+         "div" : "Hopper"
+      },
+      "frc980" : {
+         "loc" : "G52",
+         "div" : "Hopper"
+      },
+      "frc3132" : {
+         "loc" : "B23",
+         "div" : "Carver"
+      },
+      "frc4941" : {
+         "div" : "Turing",
+         "loc" : "H18"
+      },
+      "frc2642" : {
+         "loc" : "H08",
+         "div" : "Turing"
+      },
+      "frc7067" : {
+         "loc" : "D09",
+         "div" : "Newton"
+      },
+      "frc957" : {
+         "loc" : "I34",
+         "div" : "Hopper"
+      },
+      "frc5716" : {
+         "loc" : "I04",
+         "div" : "Turing"
+      },
+      "frc7018" : {
+         "div" : "Roebling",
+         "loc" : "F19"
+      },
+      "frc1622" : {
+         "loc" : "A28",
+         "div" : "Carver"
+      },
+      "frc2478" : {
+         "loc" : "H17",
+         "div" : "Turing"
+      },
+      "frc580" : {
+         "div" : "Carver",
+         "loc" : "A34"
+      },
+      "frc5829" : {
+         "loc" : "A36",
+         "div" : "Carver"
+      },
+      "frc2906" : {
+         "div" : "Roebling",
+         "loc" : "E29"
+      },
+      "frc4013" : {
+         "div" : "Carver",
+         "loc" : "A26"
+      },
+      "frc3933" : {
+         "div" : "Galileo",
+         "loc" : "F41"
+      },
+      "frc6168" : {
+         "loc" : "E30",
+         "div" : "Galileo"
+      },
+      "frc5663" : {
+         "div" : "Newton",
+         "loc" : "C04"
+      },
+      "frc4698" : {
+         "loc" : "I19",
+         "div" : "Turing"
+      },
+      "frc7081" : {
+         "div" : "Roebling",
+         "loc" : "E03"
+      },
+      "frc6353" : {
+         "div" : "Hopper",
+         "loc" : "H30"
+      },
+      "frc2429" : {
+         "loc" : "D25",
+         "div" : "Carver"
+      },
+      "frc1178" : {
+         "loc" : "E19",
+         "div" : "Roebling"
+      },
+      "frc6952" : {
+         "div" : "Turing",
+         "loc" : "I21"
+      },
+      "frc604" : {
+         "div" : "Newton",
+         "loc" : "A08"
+      },
+      "frc1072" : {
+         "div" : "Roebling",
+         "loc" : "E08"
+      },
+      "frc5199" : {
+         "div" : "Newton",
+         "loc" : "A07"
+      },
+      "frc3506" : {
+         "div" : "Hopper",
+         "loc" : "H48"
+      },
+      "frc1690" : {
+         "loc" : "B31",
+         "div" : "Carver"
+      },
+      "frc7152" : {
+         "div" : "Roebling",
+         "loc" : "E02"
+      },
+      "frc2383" : {
+         "div" : "Roebling",
+         "loc" : "G23"
+      },
+      "frc6822" : {
+         "div" : "Turing",
+         "loc" : "H19"
+      },
+      "frc5997" : {
+         "div" : "Newton",
+         "loc" : "C16"
+      },
+      "frc5291" : {
+         "loc" : "I33",
+         "div" : "Hopper"
+      },
+      "frc4499" : {
+         "div" : "Carver",
+         "loc" : "B27"
+      },
+      "frc5414" : {
+         "loc" : "I30",
+         "div" : "Hopper"
+      },
+      "frc2096" : {
+         "loc" : "G50",
+         "div" : "Hopper"
+      },
+      "frc418" : {
+         "loc" : "A37",
+         "div" : "Carver"
+      },
+      "frc2522" : {
+         "loc" : "E22",
+         "div" : "Roebling"
+      },
+      "frc5818" : {
+         "loc" : "I06",
+         "div" : "Turing"
+      },
+      "frc5857" : {
+         "loc" : "D42",
+         "div" : "Galileo"
+      },
+      "frc5453" : {
+         "div" : "Turing",
+         "loc" : "I07"
+      },
+      "frc6314" : {
+         "loc" : "H09",
+         "div" : "Turing"
+      },
+      "frc3711" : {
+         "loc" : "H49",
+         "div" : "Hopper"
+      },
+      "frc2583" : {
+         "div" : "Hopper",
+         "loc" : "I25"
+      },
+      "frc4522" : {
+         "div" : "Roebling",
+         "loc" : "F06"
+      },
+      "frc2990" : {
+         "loc" : "H47",
+         "div" : "Hopper"
+      },
+      "frc6026" : {
+         "loc" : "E50",
+         "div" : "Galileo"
+      },
+      "frc5468" : {
+         "div" : "Turing",
+         "loc" : "G07"
+      },
+      "frc6445" : {
+         "loc" : "H20",
+         "div" : "Turing"
+      },
+      "frc3145" : {
+         "loc" : "D31",
+         "div" : "Carver"
+      },
+      "frc1538" : {
+         "loc" : "H14",
+         "div" : "Turing"
+      },
+      "frc5700" : {
+         "div" : "Newton",
+         "loc" : "A20"
+      },
+      "frc1002" : {
+         "div" : "Roebling",
+         "loc" : "D28"
+      },
+      "frc5987" : {
+         "div" : "Carver",
+         "loc" : "A44"
+      },
+      "frc5344" : {
+         "div" : "Turing",
+         "loc" : "G15"
+      },
+      "frc4775" : {
+         "loc" : "H28",
+         "div" : "Hopper"
+      },
+      "frc359" : {
+         "div" : "Hopper",
+         "loc" : "H38"
+      },
+      "frc6844" : {
+         "div" : "Newton",
+         "loc" : "A18"
+      },
+      "frc4293" : {
+         "loc" : "E41",
+         "div" : "Galileo"
+      },
+      "frc3006" : {
+         "div" : "Galileo",
+         "loc" : "D38"
+      },
+      "frc100" : {
+         "div" : "Carver",
+         "loc" : "B34"
+      },
+      "frc2059" : {
+         "loc" : "I20",
+         "div" : "Turing"
+      },
+      "frc2341" : {
+         "loc" : "G10",
+         "div" : "Turing"
+      },
+      "frc5809" : {
+         "loc" : "G46",
+         "div" : "Hopper"
+      },
+      "frc3309" : {
+         "loc" : "C21",
+         "div" : "Newton"
+      },
+      "frc5104" : {
+         "loc" : "C18",
+         "div" : "Newton"
+      },
+      "frc5437" : {
+         "loc" : "E06",
+         "div" : "Roebling"
+      },
+      "frc6902" : {
+         "div" : "Carver",
+         "loc" : "A39"
+      },
+      "frc4270" : {
+         "div" : "Newton",
+         "loc" : "B14"
+      },
+      "frc5817" : {
+         "div" : "Galileo",
+         "loc" : "F44"
+      },
+      "frc846" : {
+         "div" : "Galileo",
+         "loc" : "G41"
+      },
+      "frc6645" : {
+         "div" : "Newton",
+         "loc" : "A16"
+      },
+      "frc585" : {
+         "loc" : "G36",
+         "div" : "Hopper"
+      },
+      "frc1775" : {
+         "loc" : "F16",
+         "div" : "Roebling"
+      },
+      "frc1983" : {
+         "loc" : "D24",
+         "div" : "Roebling"
+      },
+      "frc5630" : {
+         "div" : "Galileo",
+         "loc" : "G37"
+      },
+      "frc1577" : {
+         "div" : "Galileo",
+         "loc" : "F47"
+      },
+      "frc6891" : {
+         "div" : "Newton",
+         "loc" : "A14"
+      },
+      "frc1982" : {
+         "div" : "Newton",
+         "loc" : "B17"
+      },
+      "frc7102" : {
+         "div" : "Roebling",
+         "loc" : "E04"
+      },
+      "frc3501" : {
+         "div" : "Newton",
+         "loc" : "C05"
+      },
+      "frc4201" : {
+         "loc" : "E46",
+         "div" : "Galileo"
+      },
+      "frc2723" : {
+         "div" : "Carver",
+         "loc" : "C30"
+      },
+      "frc4980" : {
+         "loc" : "F09",
+         "div" : "Roebling"
+      },
+      "frc3512" : {
+         "loc" : "H10",
+         "div" : "Turing"
+      },
+      "frc1466" : {
+         "div" : "Carver",
+         "loc" : "C28"
+      },
+      "frc7106" : {
+         "div" : "Galileo",
+         "loc" : "G45"
+      },
+      "frc6131" : {
+         "loc" : "G06",
+         "div" : "Turing"
+      },
+      "frc6424" : {
+         "loc" : "D21",
+         "div" : "Newton"
+      },
+      "frc6831" : {
+         "div" : "Galileo",
+         "loc" : "D50"
+      }
+   }
+}

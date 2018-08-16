@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block title %}Q{{match.id}} - Match Scouting - Quickscout{% endblock %}
+{% block content %}
+<p class="text-center">Match scouting - Q{{match.id}}</p>
+{% if exists %}
+<div class="alert alert-danger text-center qs-form-prematch">Data already exists for this match. Submitting new data will overwrite it.</div>
+{% endif %}
+<p class="text-center qs-form-prematch">
+    <a href="{{url_for('release')}}" class="btn btn-warning" role="button">Stop Scouting</a>
+</p>
+<p class="text-center">You are scouting Team {{match[position]}}</p>
+<p class="text-center">
+    <button id="qs-undo" class="btn btn-danger" type="button" disabled>Undo</button>
+</p>
+<div id="qs-everything">
+<div class="qs-mode text-center">Pre-match</div>
+<div class="qs-form-prematch text-center">
+    {% include 'predict_buttons.html' %}
+    <p>Starting Position</p>
+    <p>
+        <div class="btn-group-vertical btn-group-lg" role="group">
+            <button type="button" class="qs-startpos qs-auto btn btn-default" data-event="start-far">Far</button>
+            <button type="button" class="qs-startpos qs-auto btn btn-default" data-event="start-middle">Middle</button>
+            <button type="button" class="qs-startpos qs-auto btn btn-default" data-event="start-close">Close</button>
+        </div>
+    </p>
+    <p>
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="start-with-cube">Starting with a cube</button>
+    </p>
+    <p>
+        <button type="button" data-newmode="auton" class="qs-enter-mode btn btn-info btn-block">Start match <span aria-hidden="true">&#129094;</span></button>
+    </p>
+</div>
+
+
+<div class="qs-form-auton qs-form-teleop text-center hide">
+    <p>Cube pickup zone</p>
+    <p>
+        <div class="qs-zone-group qs-cube-zone-group btn-group btn-group-justified" role="group">
+            <div class="qs-btn-narrow btn-group" role="group">
+                <button type="button" class="btn btn-default {{left_color}}"></button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" data-cube-zone="1">1</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" data-cube-zone="2">2</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" data-cube-zone="3">3<br />Null<br />Zone</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" data-cube-zone="4">4</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" data-cube-zone="5">5</button>
+            </div>
+            <div class="qs-btn-narrow btn-group" role="group">
+                <button type="button" class="btn btn-default {{right_color}}"></button>
+            </div>
+        </div>
+    </p>
+    <div class="qs-cube-actions">
+        <p>Action taken</p>
+        <p>
+            <button type="button"
+                    class="btn btn-lg {{left_color}}{%if not on_left%} qs-mode-only qs-teleop-only{%endif%}"
+                    data-event="{%if not on_left%}o{%endif%}switch" disabled>
+                {%if not on_left%}O. {%endif%}Switch
+            </button>
+            <button type="button" class="btn btn-default btn-lg" data-event="scale" disabled>Scale</button>
+            <button type="button"
+                    class="btn btn-lg {{right_color}}{%if on_left%} qs-mode-only qs-teleop-only{%endif%}"
+                    data-event="{%if on_left%}o{%endif%}switch" disabled>
+                {%if on_left%}O. {%endif%}Switch
+            </button>
+        </p>
+        <p>
+        </p>
+        <p>
+            <button type="button" class="btn btn-default btn-lg qs-mode-only qs-teleop-only" data-event="vault" disabled>Vault</button>
+            <button type="button" class="btn btn-default btn-lg" data-event="drop" disabled>Drop</button>
+        </p>
+    </div>
+    <p class="qs-mode-only qs-teleop-only">
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="knockoff">Knocked off scale: <span id="knockoff-count">0</span></button>
+    </p>
+    <p class="qs-mode-only qs-auton-only">
+        <button type="button" data-newmode="teleop" class="qs-enter-mode btn btn-info btn-block">Start teleop <span aria-hidden="true">&#129094;</span></button>
+    </p>
+    <p class="qs-mode-only qs-teleop-only">
+        <button type="button" data-newmode="endgame" class="qs-enter-mode btn btn-info btn-block">Move to endgame <span aria-hidden="true">&#129094;</span></button>
+    </p>
+</div>
+
+<div class="qs-form-endgame text-center hide">
+    <p>
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="endplatform">Parked on platform</button>
+    </p>
+    <p>
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="climbend">Finished climb</button>
+    </p>
+    <p>
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="climbfail">Climb failed</button>
+    </p>
+    <p>Teams carried</p>
+    <p>
+        <div class="btn-group btn-group-lg" role="group">
+            <button type="button" class="qs-auto btn btn-default" data-event="climbcarry0">0</button>
+            <button type="button" class="qs-auto btn btn-default" data-event="climbcarry1">1</button>
+            <button type="button" class="qs-auto btn btn-default" data-event="climbcarry2">2</button>
+        </div>
+    </p>
+    <p>
+        <button type="button" data-newmode="review" class="qs-enter-mode btn btn-info btn-block">Move to review <span aria-hidden="true">&#129094;</span></button>
+    </p>
+</div>
+
+<div class="qs-form-review text-center hide">
+    <p>
+        <label class="control-label" for="drive_comments">Drive team & HP comments</label>
+        <textarea class="form-control" id="drive_comments" name="drive_comments"></textarea>
+    </p>
+    <p>
+        <label class="control-label" for="comments">Comments</label>
+        <textarea class="form-control" id="comments" name="comments"></textarea>
+    </p>
+    <p>
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="died">Died during match</button>
+        <button type="button" class="qs-auto btn btn-default btn-lg" data-event="noshow">Did not show up</button>
+    </p>
+    <p>
+        <button type="button" class="qs-submit btn btn-success btn-lg">Submit data</button>
+    </p>
+</div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script type="text/javascript">
+    var match_info = {{ match_info|tojson|safe }};
+</script>
+<script src="{{url_for('static', filename='match_scout.js')}}"></script>
+<script src="{{url_for('static', filename='match_predict.js')}}"></script>
+{% endblock %}

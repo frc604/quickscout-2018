@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Batch upload - Quickscout{% endblock %}
+{% block styles %}
+{{super()}}
+<link href="{{url_for('static', filename='dropzone/dropzone.css')}}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<h1>Batch upload pictures</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li class="active">Batch upload</li>
+</ol>
+{% for team in teams %}
+<h2 class="text-center">{{ team.id }}</h2>
+{% include 'team_pics_include.html' %}
+{% endfor %}
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='dropzone/dropzone.js')}}"></script>
+{% endblock %}

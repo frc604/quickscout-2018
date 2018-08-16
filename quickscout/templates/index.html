@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Quickscout{% endblock %}
+{% block navbar %}
+<div class="navbar navbar-static-top">
+  <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+    {% if not current_user.is_authenticated %}
+    <li><a href="{{url_for('login')}}"><span class=""></span>Login</a></li>
+    {% else %}
+    <li><a href="{{url_for('logout')}}"><span class=""></span>Logout</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endblock %}
+{% block content %}
+<h1>Hi 604</h1>
+{% if current_user.is_authenticated %}
+<div class="alert alert-success">You are logged in as <strong>{{ current_user.name }}</strong>.</div>
+{% endif %}
+<p>
+    We're currently scouting {{config.EVENT_NAME}}.
+</p>
+<a class="btn btn-default" href="{{url_for('pit')}}" role="button">Pit scouting</a>
+<a class="btn btn-default" href="{{url_for('match')}}" role="button">Match scouting</a>
+<a class="btn btn-default" href="{{url_for('predict')}}" role="button">Make predictions</a>
+<a class="btn btn-default" href="{{url_for('match', mode='match_info')}}" role="button">Match preview</a>
+<a class="btn btn-default" href="{{url_for('match', mode='match_info', filter='604')}}" role="button">604's match preview</a>
+{% if current_user.is_admin %}
+<a class="btn btn-default" href="{{url_for('match_admin')}}" role="button">Match Admin</a>
+{% endif %}
+<a class="btn btn-default" href="{{url_for('team')}}" role="button">Team breakdowns</a>
+<a class="btn btn-default" href="{{url_for('rankings')}}" role="button">Rankings</a>
+<a class="btn btn-default" href="{{url_for('team_compare')}}" role="button">Compare teams</a>
+<a class="btn btn-default" href="{{url_for('toggle_dark')}}" role="button">{% if current_user.dark_theme %}Disable{%else%}Enable{%endif%} dark theme</a>
+{% endblock %}

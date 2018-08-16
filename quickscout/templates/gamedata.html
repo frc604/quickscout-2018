@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Gamedata - Quickscout{% endblock %}
+{% block content %}
+<h1>Gamedata</h1>
+<div class="text-center">
+    <ul>
+        {% for gd, num in counts.items() %}
+        <li>{{gd}}: {{round(num/total*100, 2)}}%</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match.js')}}"></script>
+{% endblock %}

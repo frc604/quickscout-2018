@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Rankings - Quickscout{% endblock %}
+{% block content %}
+<h1>Rankings: {{sort_mode}}</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li class="active">Rankings</li>
+</ol>
+<table class="table table-condensed table-hover table-bordered">
+    <thead>
+    <tr>
+        <th>#</th>
+        {% for point in datapoints %}
+        <th>{{point}}
+            {% if point == sort_mode %}
+            {% if revd %}
+            <a href="{{url_for('rankings', sort_mode=point)}}">↑</a>
+            <u>↓</u>
+            {% else %}
+            <u>↑</u>
+            <a href="{{url_for('rankings', sort_mode=point, reverse=1)}}">↓</a>
+            {% endif %}
+            {% else %}
+            <a href="{{url_for('rankings', sort_mode=point)}}">↑</a>
+            <a href="{{url_for('rankings', sort_mode=point, reverse=1)}}">↓</a>
+            {% endif %}
+        </th>
+        {% endfor %}
+    </tr>
+    </thead>
+    <tbody>
+    {% for team, summary in data.items() %}
+    <tr>
+        <td><a href="{{url_for('team_team', team_id=team)}}">{{ team }}</a> ({{team_rankings[team]}})</td>
+        {% for point in datapoints %}
+        <td {%if point==sort_mode%}class="active"{%endif%}>
+            {% if point.startswith('time_') %}
+            {{ summary['average_'+point][0] }} ({{summary['average_'+point][1]}})
+            {% else %}
+            {{ summary['avg_'+point] }}
+            {% endif %}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

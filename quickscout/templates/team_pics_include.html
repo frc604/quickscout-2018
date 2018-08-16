@@ -1,0 +1,26 @@
+<div class="text-center">
+    <form method="POST" enctype="multipart/form-data" class="dropzone" action="{{url_for('team_pics', team_id=team.id)}}">
+        <div class="form-group fallback">
+            <input type="file" name="file">
+            <button type="submit" class="btn btn-default">Upload</button>
+        </div>
+    </form>
+</div>
+<div class="center-block text-center">
+    {% for pic in team.pictures() %}
+    <a href="{{url_for('serve_teampics', fname=pic.full)}}">
+        {% if pic.thumb %}
+        <img src="{{url_for('serve_teampics_thumbs', fname=pic.thumb)}}" class="qs-robotpic">
+        {% else %}
+        <img src="{{url_for('serve_teampics', fname=pic.full)}}" class="qs-robotpic">
+        {% endif %}
+    </a>
+    {% endfor %}
+    {% if include_tba %}
+    {% for pic in team.tba_pictures() %}
+    <a href="{{pic.full}}">
+        <img src="{{pic.thumb}}" class="qs-robotpic">
+    </a>
+    {% endfor %}
+    {% endif %}
+</div>

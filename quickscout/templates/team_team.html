@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}{{team.id}} - Quickscout{% endblock %}
+{% block content %}
+<h1>{{team.id}} - {{team.name}}</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li><a href="{{url_for('team')}}">Teams</a></li>
+  <li class="active">{{team.id}}</li>
+  {% if team.has_any_pictures() %}
+  <li><a href="{{url_for('team_pics', team_id=team.id)}}">Pictures</a></li>
+  {% endif %}
+</ol>
+<div class="text-center">
+    <a class="btn btn-default" href="https://www.thebluealliance.com/team/{{team.id}}">
+        View on TBA
+    </a>
+    {% if pit_report %}
+    <a class="btn btn-default" href="{{url_for('pit_team', team_id=team.id)}}">
+        View pit report
+    </a>
+    {% endif %}
+    <!-- TODO: Turn into a small table? -->
+    {% if summary.died %}
+    <p>Died in: {{summary.died}}</p>
+    {% endif %}
+    {% if summary.red_card %}
+    <p>DQ'd in: {{summary.red_card}}</p>
+    {% endif %}
+    {% if summary.noshow %}
+    <p>No-show: {{summary.noshow}}</p>
+    {% endif %}
+    <table class="table table-condensed table-hover table-bordered">
+        <thead>
+        <tr>
+            <th>Field</th>
+            <th>Avg.</th>
+            <th>Min</th>
+            <th>Max</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for field in summary.data %}
+        <tr>
+            <td>{{ field }}</td>
+            <td>{{ summary['avg_' + field] }}</td>
+            <td>{{ summary['min_' + field] }}</td>
+            <td>{{ summary['max_' + field] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% for mode, action in charts %}
+    <a href="{{url_for('histogram_chart', team_id=team.id, action=action, mode=mode)}}">
+        <img class="qs-robotpic" src="{{url_for('histogram_chart', team_id=team.id, action=action, mode=mode)}}"/>
+    </a>
+    {% endfor %}
+</div>
+{% if summary.drive_comments %}
+<h2 class="text-center">Drive team comments</h2>
+{% for info in summary.drive_comments %}
+<blockquote>
+    <p>{{info.text}}</p>
+    <footer>{{user_name(info.user)}} <cite>Q{{info.match}}</cite></footer>
+</blockquote>
+{% endfor %}
+{% endif %}
+{% if summary.comments %}
+<h2 class="text-center">General comments</h2>
+{% for info in summary.comments %}
+<blockquote>
+    <p>{{info.text}}</p>
+    <footer>{{user_name(info.user)}} <cite>Q{{info.match}}</cite></footer>
+</blockquote>
+{% endfor %}
+{% endif %}
+{% if summary.superscout_comments %}
+<h2 class="text-center">SuperScout comments</h2>
+{% for info in summary.superscout_comments %}
+<blockquote>
+    <p>{{info.text}}</p>
+    <footer>{{user_name(info.user)}} <cite>Q{{info.match}}</cite></footer>
+</blockquote>
+{% endfor %}
+{% endif %}
+
+{% endblock %}

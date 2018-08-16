@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Match Info - Quickscout{% endblock %}
+{% block content %}
+<h1>Match {{match_id}} Info</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li><a href="{{url_for('match')}}">Matches</a></li>
+  <li class="active">Info ({{ match_id }})</li>
+</ol>
+<div class="text-center">
+    <table class="table table-condensed table-hover table-bordered">
+        <thead>
+        <tr>
+            <th></th>
+            {% for team_id in team_ids %}
+            <th class="{{colors[team_id]}}"><a href="{{url_for('team_team', team_id=team_id)}}">{{team_id}}</a></th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for heading, subitems in data.items() %}
+        <tr>
+            <th colspan="7">{{heading}}</th>
+        </tr>
+        {% for column, property in subitems.items() %}
+        <tr>
+            <th>{{ column }}</th>
+            {% for team_id in team_ids %}
+            {% if heading == 'Pictures' %}
+            <td class="{{colors[team_id]}}">
+                {% for pic in teams[team_id].pictures() %}
+                <a href="{{url_for('serve_teampics', fname=pic.full)}}">
+                    {% if pic.thumb %}
+                    <img src="{{url_for('serve_teampics_thumbs', fname=pic.thumb)}}" class="qs-robotpic">
+                    {% else %}
+                    <img src="{{url_for('serve_teampics', fname=pic.full)}}" class="qs-robotpic">
+                    {% endif %}
+                </a>
+                {% endfor %}
+                {% for pic in teams[team_id].tba_pictures() %}
+                <a href="{{pic.full}}">
+                    <img src="{{pic.thumb}}" class="qs-robotpic">
+                </a>
+                {% endfor %}
+            </td>
+            {% elif heading == 'Charts' %}
+            <td class="{{colors[team_id]}}">
+                {% for mode, action in charts %}
+                <a href="{{url_for('histogram_chart', team_id=team_id, action=action, mode=mode)}}">
+                    <img class="qs-robotpic" src="{{url_for('histogram_chart', team_id=team_id, action=action, mode=mode)}}"/>
+                </a>
+                {% endfor %}
+            </td>
+            {% else %}
+            <td class="{{colors[team_id]}}">{{ property(summaries[team_id])|safe }}</td>
+            {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

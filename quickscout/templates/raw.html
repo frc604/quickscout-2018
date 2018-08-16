@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Review raw data - Quickscout{% endblock %}
+{% block content %}
+<h1>Review raw data</h1>
+<ol class="breadcrumb">
+  <li><a href="{{url_for('main')}}">Home</a></li>
+  <li class="active">Raw data</li>
+</ol>
+<div class="text-center">
+    {% for match in matches %}
+    <p>Q{{match.id}}</p>
+    <div class="btn-group" role="group">
+        {% for team in match.teams().red %}
+        <a class="btn btn-danger"
+           href="{{url_for('raw_team', match_id=match.id, team_id=team)}}" {%if not reports[match.id][team]%}disabled{%endif%}>
+            {{team}}  {% if reports[match.id][team] > 1 %}({{reports[match.id][team]}}){% endif %}
+        </a>
+        {% endfor %}
+        {% for team in match.teams().blue %}
+        <a class="btn btn-primary"
+           href="{{url_for('raw_team', match_id=match.id, team_id=team)}}" {%if not reports[match.id][team]%}disabled{%endif%}>
+            {{team}} {% if reports[match.id][team] > 1 %}({{reports[match.id][team]}}){% endif %}
+        </a>
+        {% endfor %}
+    </div>
+    <p></p>
+    {%endfor%}
+</div>
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="{{url_for('static', filename='match.js')}}"></script>
+{% endblock %}

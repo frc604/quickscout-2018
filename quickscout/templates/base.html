@@ -1,0 +1,8 @@
+{% extends "bootstrap/base.html" %}
+{% block styles %}
+{{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    {% if current_user.dark_theme %}
+    <link rel="stylesheet" href="{{url_for('static', filename='dark.css')}}">
+    {% endif %}
+{% endblock %}

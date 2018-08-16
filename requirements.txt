@@ -1,0 +1,8 @@
+flask
+flask-bootstrap
+flask-login
+flask-sqlalchemy
+gunicorn
+matplotlib
+numpy
+requests

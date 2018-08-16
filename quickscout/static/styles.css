@@ -1,0 +1,39 @@
+body {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.qs-zone-group .btn {
+  height: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-group-justified > div.qs-btn-narrow {
+    width: 0.1%;
+}
+
+.entry-center {
+    float: none;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.text-center th {
+    text-align: center;
+}
+
+.qs-robotpic {
+    max-height: 400px;
+    max-width: 80%;
+}
+
+.qs-promote {
+    cursor: pointer;
+}
